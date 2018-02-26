@@ -12,6 +12,8 @@ var admins = require('./routes/admins');
 
 var app = express();
 
+var mongoDB = 'mongodb://127.0.0.1:27017/Crud';
+mongoose.connect(mongoDB,{});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
