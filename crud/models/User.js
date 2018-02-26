@@ -6,7 +6,7 @@ let UserSchema = new Schema({
     name:String,
     surname:String,
     birthday:String,
-    statusRole: {type:Integer,default:0},
+    statusRole: {type:Number,default:0},
     email:String,
     password:String
 });
