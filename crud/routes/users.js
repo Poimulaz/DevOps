@@ -25,10 +25,11 @@ router.post('/create', function(req, res) {
   user.password = req.body.password;
 
   User.create(user, function(err, item) {
-    if(err){
-      console.log("OMG ", err);
+    if(item){
+      console.log("OMG ", user);
     }
-      res.send("ok");
+   
+    res.send("ok");
   });
   
 });
